@@ -5,6 +5,7 @@ defineProps<{
   withSearchIcon?: boolean
   withBackground?: boolean
   label?: string
+  required?: boolean
 }>()
 defineEmits(['update:modelValue'])
 </script>
@@ -23,6 +24,7 @@ defineEmits(['update:modelValue'])
       :class="{
         'with-background': withBackground
       }"
+      :required="required"
     />
   </div>
 </template>

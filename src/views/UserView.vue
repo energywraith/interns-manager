@@ -60,7 +60,7 @@ const onAvatarAdd = () => {
 </script>
 
 <template>
-  <form>
+  <form :onsubmit="onUserCreateHandle">
     <main>
       <h1>Add user</h1>
       <ShadowCard class="name-card">
@@ -76,9 +76,7 @@ const onAvatarAdd = () => {
           label="Last Name"
           required
         />
-        <ButtonComponent class="name-card__button" :onclick="onUserCreateHandle"
-          >Update Details</ButtonComponent
-        >
+        <ButtonComponent class="name-card__button" type="submit">Update Details</ButtonComponent>
       </ShadowCard>
       <ShadowCard class="avatar-card">
         <AvatarComponent class="avatar-card__avatar" :src="avatar" />
