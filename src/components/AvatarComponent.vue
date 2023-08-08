@@ -25,9 +25,9 @@ div {
   }
 
   &.empty {
-    background: #f8f8fa;
+    background: var(--color-light-600);
     padding: 24px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 3px var(--color-dark-300);
   }
 }
 

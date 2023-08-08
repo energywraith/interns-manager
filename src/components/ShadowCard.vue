@@ -6,7 +6,7 @@
 
 <style scoped>
 .shadow-card {
-  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 6px var(--color-dark-100);
   padding: 2rem 1rem;
   border-radius: 6px;
   background: #fff;

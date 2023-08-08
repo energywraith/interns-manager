@@ -3,6 +3,7 @@ defineProps<{
   placeholder: string
   modelValue: string
   withSearchIcon?: boolean
+  withBackground?: boolean
   label?: string
 }>()
 defineEmits(['update:modelValue'])
@@ -19,6 +20,9 @@ defineEmits(['update:modelValue'])
       :placeholder="placeholder"
       :value="modelValue"
       @input="$emit('update:modelValue', ($event.target as HTMLInputElement)?.value)"
+      :class="{
+        'with-background': withBackground
+      }"
     />
   </div>
 </template>
@@ -29,6 +33,7 @@ div {
   display: flex;
   flex-direction: column;
   row-gap: 0.5rem;
+  border-radius: 4px;
 
   &.with-search-icon {
     width: fit-content;
@@ -58,9 +63,13 @@ input {
   padding: 1rem 0.5rem;
   border: 0;
   border-radius: 4px;
-  box-shadow: 0 0 1px #111111;
+  box-shadow: 0 0 1px var(--color-dark-800);
   font-weight: 600;
   width: 100%;
+
+  &.with-background {
+    background: var(--color-light-600);
+  }
 }
 
 label {

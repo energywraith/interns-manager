@@ -116,6 +116,7 @@ main {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
+  order: 2;
 
   &__button {
     align-self: stretch;
@@ -128,6 +129,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
+    order: 1;
 
     &__button {
       align-self: flex-end;
@@ -142,6 +144,11 @@ main {
   align-items: center;
   row-gap: 6rem;
   padding-top: 4rem;
+  order: 1;
+
+  @media (min-width: 768px) {
+    order: 2;
+  }
 
   &__avatar {
     height: 10rem;

@@ -40,22 +40,22 @@ button {
   border-radius: 4px;
 
   &.solid {
-    background: #459672;
+    background: var(--color-green-900);
     color: white;
-    text-shadow: 0.3px 0.3px 3px #00000025;
+    text-shadow: 0.3px 0.3px 3px var(--color-dark-300);
 
     &:hover {
-      background: #3b8162;
+      background: var(--color-green-600);
     }
   }
 
   &.ghost {
     background: transparent;
-    border: 1px solid #00000075;
-    color: #000000bb;
+    border: 1px solid var(--color-dark-750);
+    color: var(--color-dark-800);
 
     &:hover {
-      box-shadow: 0 0 3px rgba(0, 0, 0, 0.411);
+      box-shadow: 0 0 3px var(--color-dark-300);
     }
   }
 

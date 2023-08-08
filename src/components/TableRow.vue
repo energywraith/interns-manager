@@ -57,7 +57,7 @@ tr {
   height: 4rem;
 
   &:nth-of-type(2n) {
-    background-color: #f8f8fa;
+    background-color: var(--color-light-600);
   }
 }
 .table-actions {
@@ -65,10 +65,10 @@ tr {
   column-gap: 1rem;
   .action {
     cursor: pointer;
-    fill: rgba(0, 0, 0, 0.3);
+    fill: var(--color-dark-300);
 
     &:hover {
-      fill: #000;
+      fill: var(--color-dark-900);
     }
   }
 }

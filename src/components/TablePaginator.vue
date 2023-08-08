@@ -45,17 +45,21 @@ const onNextPageClick = () => {
 }
 
 button {
-  background: white;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: var(--color-light-900);
+  border: 1px solid var(--color-dark-100);
   width: 2rem;
   height: 2rem;
   cursor: pointer;
-  color: #3b8162;
+  color: var(--color-green-900);
+
+  &:hover {
+    background: var(--color-dark-100);
+  }
 
   &.active {
     border: 0;
-    background: #3b8162;
-    color: white;
+    background: var(--color-green-900);
+    color: var(--color-light-900);
   }
 }
 </style>
