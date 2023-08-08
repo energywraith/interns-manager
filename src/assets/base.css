@@ -8,6 +8,7 @@
   --color-dark-100: rgba(0, 0, 0, 0.1);
   --color-green-900: #459672;
   --color-green-600: #3b8162;
+  --color-red-600: rgb(220 38 38);
 }
 *,
 *::before,
