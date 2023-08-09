@@ -26,7 +26,7 @@ const perPage = 8
 const headers = [
   {
     key: 'avatar',
-    label: 'Avatar',
+    label: '',
     width: '20%',
     component: AvatarComponent
   },

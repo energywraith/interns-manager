@@ -47,7 +47,7 @@ div {
 
     &::before {
       content: '';
-      background: url('src/assets/search.svg') no-repeat 96% center;
+      background: url('../assets/search.svg') no-repeat 96% center;
       background-size: 1em;
       right: 0.5rem;
       top: 50%;
